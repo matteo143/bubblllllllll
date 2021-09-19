@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="i!W;WZem##3n*$@,}.]|">mySprite</variable><variable type="KIND_SpriteKind" id="P,wAp(3moxkqq|qe8W{_">Player</variable><variable type="KIND_SpriteKind" id="Ns7(W^KS`|dx?WC;xsLb">Projectile</variable><variable type="KIND_SpriteKind" id="f7iTmN]MbtAeX1cW_.1(">Food</variable><variable type="KIND_SpriteKind" id="VY_y#MG+99+b~vsXX0sh">Enemy</variable></variables><block type="pxt-on-start" id="P$SZb4p#2/lctc5JtD4W" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="Vyv4/]iL-OEJg,[)0~YM"><field name="VAR" id="i!W;WZem##3n*$@,}.]|">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreatenoset" id="UvQk_LA@WG~LyZkV7QS7"><value name="img"><shadow type="screen_image_picker" id="Kqhb4aRU5SXftZs9q)j:"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 4 4 4 4 4 4 . . . . . . 
+. . . 4 4 . . . . 4 . . . . . . 
+. . . 4 4 . 4 . 4 4 . . . . . . 
+. . . . 4 . . . . 4 . . . . . . 
+. . . . 4 . . 4 . 4 . . . . . . 
+. . . . 4 . 4 4 4 4 . . . . . . 
+. . . . 4 4 4 . . . . . . . . . 
+. . . . . . 4 . . . . . . . . . 
+. . . 4 4 4 4 4 4 4 . . . . . . 
+. . . . . . 4 . . . . . . . . . 
+. . . . . 4 . 4 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"Kqhb4aRU5SXftZs9q)j:"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="fP`)RFKY;M@D~aTU}~wP"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="iBXEVfWWMF.:q:HQg_0s"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="ViAsj[1}*F$P%3r_$+aK"><field name="VAR" id="i!W;WZem##3n*$@,}.]|">mySprite</field></block></value><next><block type="gamesetbackgroundcolor" id=":c[0,t;8+?oUZu,w~[,p"><value name="color"><shadow type="colorindexpicker" id="yg5}Y-2invB25i7KVbmi"><field name="index">13</field></shadow></value><next><block type="tilemap_editor" id="C4UKMjQEX{z/|~9e=fyq"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="run_image_animation" id="MQb{_~j]g.Pc{sa|*NCu"><value name="sprite"><block type="variables_get" id="``/dZpQjAZD}I9Iuh-jm"><field name="VAR" id="i!W;WZem##3n*$@,}.]|">mySprite</field></block></value><value name="frames"><block type="animation_editor" id="SHr0X{F(.{`Z3DPpUx_d"><field name="frames">[img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 3 3 3 3 3 3 . . . . . . 
+. . . 3 3 . . . . 3 . . . . . . 
+. . . 3 . 3 . 3 . 3 . . . . . . 
+. . . 3 . . . . 3 3 . . . . . . 
+. . . 3 3 . 3 . 3 . . . . . . . 
+. . . . 3 3 3 3 3 . . . . . . . 
+. . . . . . 3 . . . . . . . . . 
+. . . . . . 3 . . . . . . . . . 
+. . . . . 3 3 3 . . . . . . . . 
+. . . . 3 . 3 . 3 . . . . . . . 
+. . . . . . 3 . . . . . . . . . 
+. . . . . 3 . 3 . . . . . . . . 
+. . . . 3 . . . 3 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,img`
+. . . . . . . . . . . . . . . . 
+. . . . . 5 5 5 5 5 . . . . . . 
+. . . . . 5 . . . . 5 . . . . . 
+. . . . . 5 . 5 . 5 5 . . . . . 
+. . . . . 5 . . . . 5 . . . . . 
+. . . . . 5 . . 5 . 5 . . . . . 
+. . . . . 5 5 . . 5 5 . . . . . 
+. . . . . . . 5 5 5 . . . . . . 
+. . . . . . . . 5 . . . . . . . 
+. . . . . . . . 5 . . . . . . . 
+. . . . . 5 5 5 5 5 5 5 . . . . 
+. . . . . . . . 5 . . . . . . . 
+. . . . . . . 5 5 5 . . . . . . 
+. . . . . . . . 5 . . . . . . . 
+. . . . . . . 5 5 5 . . . . . . 
+. . . . . . . . . . . . . . . . 
+`]</field><data>{"commentRefs":[],"fieldData":{"frames":"SHr0X{F(.{`Z3DPpUx_d"}}</data></block></value><value name="frameInterval"><shadow type="timePicker" id="TVW]3?4Ks0zX{~;nUt4}"><field name="ms">500</field></shadow></value><value name="loop"><shadow type="toggleOnOff" id="6sk=eELFo/VO(P]:60O:"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
